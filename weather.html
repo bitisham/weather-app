@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css" />
+  </head>
+
+  <body>
+    <h1
+      style="color: #fff; font-size: 3rem; margin-top: 20px; text-align: center"
+    >
+      Weather App
+    </h1>
+    <div class="card">
+      <div class="search">
+        <input type="text" id="searchBox" placeholder="Enter City Name" spellcheck="false" />
+        <button id="searchBtn"><img src="pictures/search.png" alt="Search Icon" /></button>
+      </div>
+      <div class="error">
+        <p style="font-size: 1.5rem">
+          Unable to fetch data. Please try another location.
+        </p>
+      </div>
+      <div class="weather" style="display: none">
+        <img src="pictures/rain.png" class="weather-icon" alt="Weather Icon" />
+        <p class="weather-condition"></p>
+        <h1 class="temp">22 °C</h1>
+        <h2 class="city">New York</h2>
+        <div class="details">
+          <div class="col">
+            <img src="pictures/humidity.png" alt="Humidity Icon" class="img"/>
+            <div>
+              <p class="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="pictures/wind.png" alt="Wind Icon" class="img" />
+            <div>
+              <p class="wind">15 km/hr</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="weather.js"></script>
+  </body>
+</html>
